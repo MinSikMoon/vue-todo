@@ -26,8 +26,10 @@ export default {
     }
   },
   methods: {
-    addTodo() {
-
+    addTodo(todoItem) {
+      //input의 addTodo이벤트와 값을 받기위해서
+      localStorage.setItem(todoItem, todoItem);
+      this.todoItems.push(todoItem);
     }
   }
 }
