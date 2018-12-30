@@ -24,7 +24,7 @@ export default {
     addTodo() {
       if (this.newTodoItem != "") {
         var value = this.newTodoItem && this.newTodoItem.trim();
-        this.$emi('addTodo', value);
+        this.$emit('addTodo', value);
         this.clearInput();
       }
     },
