@@ -26,7 +26,7 @@ export default {
 <style>
     body{
         text-align: center;
-        background-color: pink;
+        background-color: rgba(192, 192, 192, 0.925);
     }
     input{
         border-style: groove;

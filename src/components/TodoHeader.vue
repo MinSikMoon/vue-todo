@@ -14,6 +14,6 @@ h1 {
 }
 
 div{
-    background-color: green;
+    background-color: rgba(192, 192, 192, 0.925);
 }
 </style>
