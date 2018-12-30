@@ -19,6 +19,16 @@ export default {
     'TodoInput' : TodoInput,
     'TodoList' : TodoList,
     'TodoFooter' : TodoFooter
+  },
+  data(){
+    return {
+      todoItems:[]
+    }
+  },
+  methods: {
+    addTodo() {
+
+    }
   }
 }
 </script>
