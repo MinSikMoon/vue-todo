@@ -1,17 +1,19 @@
 <template>
-    <div>TODO 앱 헤더</div>
+  <div><h1>TODO 앱 헤더</h1></div>
 </template>
 
 <script>
-export default {
-    
-}
+export default {};
 </script>
 
 <style scoped>
-  h1{
-      color:white;
-      font-weight: 900;
-      margin: 2.5rem 0 1.5rem;
-  }
+h1 {
+  color:black;
+  font-weight: 900;
+  margin: 2.5rem 0 1.5rem;
+}
+
+div{
+    background-color: green;
+}
 </style>
