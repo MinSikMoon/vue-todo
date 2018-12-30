@@ -1,7 +1,10 @@
 <template>
-  <div>
-    <input type="text" v-model="newTodoItem">
-    <button v-on:click="addTodo">추가</button>
+  <div class="inputBox shadow">
+    <input type="text" placeholder="type what you have to do" 
+    v-model="newTodoItem" v-on:keyup.enter="addTodo">
+    <span class="addContainer" v-on:click="addTodo">
+        <i class="addBtn fa fa-plus"></i>
+    </span>
   </div>
 </template>
 
