@@ -17,6 +17,7 @@ export default {
     methods: {
         removeTodo(todoItem, index){
            localStorage.removeItem(todoItem);
+           this.$emit('removeTodo', index);
         }
     },
     props: ['propsdata']

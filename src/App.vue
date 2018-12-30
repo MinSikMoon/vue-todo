@@ -2,7 +2,7 @@
   <div id="app">
     <TodoHeader></TodoHeader>
     <TodoInput v-on:addTodo="addTodo"></TodoInput>
-    <TodoList v-bind:propsdata="todoItems"></TodoList>
+    <TodoList v-bind:propsdata="todoItems" v-on:removeTodo="removeTodo"></TodoList>
     <TodoFooter></TodoFooter>
   </div>
 </template>
@@ -30,6 +30,9 @@ export default {
       //input의 addTodo이벤트와 값을 받기위해서
       localStorage.setItem(todoItem, todoItem);
       this.todoItems.push(todoItem);
+    },
+    removeTodo(index){
+        this.todoItems.splice(index,1);
     }
   },
   created() {
